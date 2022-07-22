@@ -115,3 +115,36 @@ ul li a:hover::before {
   color: black;
   transition: 0.3s ease;
 }
+
+@media (max-width: 768px) {
+  .hero,
+  .blur {
+    height: 100vh;
+  }
+  navbar {
+    margin-bottom: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .hero-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 466px) {
+  ul {
+    display: none;
+  }
+  .hero-section h3 {
+    font-size: 20px;
+  }
+  .hero-section p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .btn-primary {
+    padding: 5px 30px;
+    font-size: 15px;
+  }
+}
